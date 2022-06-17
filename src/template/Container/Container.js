@@ -8,6 +8,7 @@ function Container ({ width, height, padding, margin, css, children }) {
     height,
     padding,
     margin,
+    position: 'relative',
   });
 
   return <StyledContainer css={css}>

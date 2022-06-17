@@ -13,6 +13,7 @@ function Sidebar() {
       css={{
         background: "$black_2",
         boxShadow: "4px 0px 24px 0px rgba(1, 1, 1, 0.2)",
+        zIndex: 20
       }}
     >
       <FlexContainer height="100%" flexDirection="column" css={{ gap: "$30" }}>

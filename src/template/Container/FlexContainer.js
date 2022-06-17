@@ -20,6 +20,7 @@ function FlexContainer({
     justifyContent,
     alignItems,
     gap,
+    position: "relative",
   });
 
   return <StyledFlex css={css}>{children}</StyledFlex>;
