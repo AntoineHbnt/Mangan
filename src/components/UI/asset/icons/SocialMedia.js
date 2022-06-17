@@ -2,8 +2,6 @@ import React from "react";
 import { styled } from "../../../../Themes";
 
 const Svg = styled("svg", {
-  width: "25px",
-  height: "25px",
   fill: "$red",
 });
 
