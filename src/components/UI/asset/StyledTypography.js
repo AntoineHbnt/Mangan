@@ -1,4 +1,4 @@
-import { styled } from "../../Themes";
+import { styled } from "../../../Themes";
 
 export const H1 = styled("h1", {
   fontSize: "$36",
@@ -42,7 +42,7 @@ export const NavItem = styled("span", {
     fontSize: '$18',
     fontWeight: '400',
     fontFamily: '$poppins',
-    lineHeight: '$75',
+    lineHeight: '58px',
     
 })
 
