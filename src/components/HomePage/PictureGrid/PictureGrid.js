@@ -1,7 +1,7 @@
 import { React } from "react";
 import Container from "../../../template/Container/Container";
 import FlexContainer from "../../../template/Container/FlexContainer";
-import Button from "../../UI/asset/Button/Button";
+import Button from "../../UI/Button/Button";
 import { H1, Span } from "../../UI/asset/StyledTypography";
 import Carousel from "./Carousel/Carousel";
 import PictureContainer from "./PictureContainer/PictureContainer";
@@ -43,7 +43,7 @@ function ActiveRecipe() {
           <Span css={{fontSize: "20px" , lineHeight: '30px', marginBottom: '40px'}}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque suscipit. Dolor earum officiis suscipit!
           </Span>
-          <Button css={{width: "250px", height: "65px"}}/>
+          <Button value="Show Recipe" css={{width: "250px", height: "65px"}}/>
         </FlexContainer>
       </Container>
     </FlexContainer>

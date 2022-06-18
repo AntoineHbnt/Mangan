@@ -18,11 +18,31 @@ function Menu() {
 }
 
 function Item({ label, isActive }) {
+  const hoverStyle = {
+    cursor: "pointer",
+    "&:hover": {
+      "& > span": {
+        color: "white",
+      },
+      "&: > div": {
+        borderColor: isActive ? "$red" : "$white",
+      },
+    },
+  };
+  
+  const navItemStyle = {
+    transition: "all .1s ease-in",
+    color: isActive ? "$white" : "$gray",
+  };
+
+  const dashedLineStyle = {
+    borderColor: isActive && "$red",
+  };
 
   return (
-    <FlexContainer height="fit-content" flexDirection="column">
-      <NavItem css={{ color: isActive ? "$white" : "$gray" }}>{label}</NavItem>
-      <HorizontalDashedLine css={isActive && {borderColor: "$red"}}/>
+    <FlexContainer height="fit-content" flexDirection="column" css={hoverStyle}>
+      <NavItem css={navItemStyle}>{label}</NavItem>
+      <HorizontalDashedLine css={dashedLineStyle} />
     </FlexContainer>
   );
 }

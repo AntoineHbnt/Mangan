@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "../../../../Themes";
+import { styled } from "../../../Themes";
 
-function Button({ css }) {
+function Button({ value, css }) {
   const StyledInputSubmit = styled("input", {
+    position: "relative",
     width: "220px",
     height: "50px",
     background: "$red",
@@ -12,16 +13,24 @@ function Button({ css }) {
     borderRadius: 999,
     fontSize: "$18",
     fontFamily: "$poppins",
+    cursor: "pointer",
+    transition: "all .2s ease-in",
+
+    "&:hover": {
+      background: "$darker_red",
+    },
   });
 
-  return <StyledInputSubmit css={css}type="submit" value="Show Recipe" />;
+  return <StyledInputSubmit css={css} type="submit" value={value} />;
 }
 
 Button.propTypes = {
+  value: PropTypes.string,
   css: PropTypes.shape({}),
 };
 
 Button.defaultProps = {
+  value: "",
   css: {},
 };
 
