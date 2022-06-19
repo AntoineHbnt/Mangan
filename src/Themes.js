@@ -91,4 +91,9 @@ export const { styled, css } = createStitches({
       back: 1,
     },
   },
+  media: {
+    mobile: "(max-width: 480px)",
+    tablet: "(max-width: 768px)",
+    smallScreen: "(max-width: 1024px)",
+  },
 });

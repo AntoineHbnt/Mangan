@@ -5,12 +5,17 @@ import { H2 } from "../../../UI/asset/StyledTypography";
 import PictureContainer from "../PictureContainer/PictureContainer";
 
 function Carousel() {
+  const flexStyle = {
+    flex: 1,
+    background: "green",
+
+    "@smallScreen": {
+      display: "none",
+    },
+  };
+
   return (
-    <FlexContainer
-      height="100%"
-      flexDirection="column"
-      css={{ flex: 1, background: "green" }}
-    >
+    <FlexContainer height="100%" flexDirection="column" css={flexStyle}>
       <Recipe />
       <Recipe />
       <Recipe />
