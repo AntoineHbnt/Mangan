@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { styled } from "../../Themes";
 
-function Container ({ width, height, padding, margin, css, children }) {
+function Container ({ width, height, padding, margin, css, children}) {
   const StyledContainer = styled("div", {
     width,
     height,

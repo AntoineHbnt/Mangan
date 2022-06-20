@@ -21,6 +21,7 @@ export const { styled, css } = createStitches({
       36: "36px",
       48: "48px",
       64: "64px",
+      80: "80px",
       128: "128px",
       256: "256px",
       512: "512px",
@@ -90,5 +91,10 @@ export const { styled, css } = createStitches({
       midle: 2,
       back: 1,
     },
+  },
+  media: {
+    mobile: "(max-width: 480px)",
+    tablet: "(max-width: 768px)",
+    smallScreen: "(max-width: 1024px)",
   },
 });
