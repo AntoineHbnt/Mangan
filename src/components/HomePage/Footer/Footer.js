@@ -1,7 +1,7 @@
 import React from "react";
-import FlexContainer from "../../../../template/Container/FlexContainer";
-import { HorizontalDashedLine } from "../../../UI/asset/StyledAsset";
-import { Copyright } from "../../../UI/asset/StyledTypography";
+import FlexContainer from "../../../template/Container/FlexContainer";
+import { HorizontalDashedLine } from "../../UI/asset/StyledAsset";
+import { Copyright } from "../../UI/asset/StyledTypography";
 import SocialMedia from "../SocialMedia/SocialMedia";
 
 function Footer() {

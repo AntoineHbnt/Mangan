@@ -1,16 +1,18 @@
 import React from "react";
-import FlexContainer from "../../../../template/Container/FlexContainer";
-import Anchor from "../../../UI/Anchor/Anchor";
+import FlexContainer from "../../../template/Container/FlexContainer";
+import Anchor from "../../UI/Anchor/Anchor";
 import {
   FacebookIcon,
   InstagramIcon,
   TwitterIcon,
   YoutubeIcon,
-} from "../../../UI/asset/icons/SocialMedia";
-import { Span } from "../../../UI/asset/StyledTypography";
+} from "../../UI/asset/icons/SocialMedia";
+import { Span } from "../../UI/asset/StyledTypography";
 
 function SocialMedia() {
   const anchorStyle = {
+    display: "flex",
+    flex: 1,
     "& > svg": {
       fill: "$gray",
     },
@@ -20,9 +22,11 @@ function SocialMedia() {
   };
 
   return (
-    <FlexContainer flexDirection="column" gap="22px">
-      <Span css={{ color: "$white" }}>Follow our Social Media</Span>
-      <FlexContainer gap="14px">
+    <FlexContainer width="100%" flexDirection="column" gap="22px">
+      <Span css={{ fontSize: "$12", color: "$white" }}>
+        Follow our Social Media
+      </Span>
+      <FlexContainer width="100%">
         <Anchor href="https://twitter.com/CelistoDev" css={anchorStyle}>
           <InstagramIcon />
         </Anchor>

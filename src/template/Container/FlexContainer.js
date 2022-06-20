@@ -21,6 +21,12 @@ function FlexContainer({
     alignItems,
     gap,
     position: "relative",
+
+    variants: {
+      display: {
+        none: "none"
+      }
+    }
   });
 
   return <StyledFlex css={css}>{children}</StyledFlex>;
