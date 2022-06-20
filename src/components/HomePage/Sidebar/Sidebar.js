@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "../../../template/Container/Container";
 import FlexContainer from "../../../template/Container/FlexContainer";
-import Logo from "../../UI/asset/logo/Logo";
-import Footer from "./Footer/Footer";
+import { Logo } from "../../UI/asset/logo/Logo";
+import Footer from "../Footer/Footer";
 import Menu from "./Menu/Menu";
 
 function Sidebar() {

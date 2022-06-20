@@ -1,13 +1,13 @@
 import React from "react";
-import FlexContainer from "../../../../template/Container/FlexContainer";
-import Anchor from "../../../UI/Anchor/Anchor";
+import FlexContainer from "../../../template/Container/FlexContainer";
+import Anchor from "../../UI/Anchor/Anchor";
 import {
   FacebookIcon,
   InstagramIcon,
   TwitterIcon,
   YoutubeIcon,
-} from "../../../UI/asset/icons/SocialMedia";
-import { Span } from "../../../UI/asset/StyledTypography";
+} from "../../UI/asset/icons/SocialMedia";
+import { Span } from "../../UI/asset/StyledTypography";
 
 function SocialMedia() {
   const anchorStyle = {

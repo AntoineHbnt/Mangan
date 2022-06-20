@@ -21,6 +21,7 @@ export const { styled, css } = createStitches({
       36: "36px",
       48: "48px",
       64: "64px",
+      80: "80px",
       128: "128px",
       256: "256px",
       512: "512px",

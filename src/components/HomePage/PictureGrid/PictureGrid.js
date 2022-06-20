@@ -15,23 +15,39 @@ function PictureGrid() {
 }
 
 function ActiveRecipe() {
-  /* const textContainerStyle = {
-    
-  }; */
+  const h1Style = {
+    color: "$white",
+    fontSize: "$80",
+    lineHeight: "$90",
+    textShadow: "4.357px 6.709px 34.58px rgba(0, 0, 0, 0.27)",
+    marginBottom: "$48",
+    lineClamp: 3,
+
+    "@tablet": {
+      fontSize: "$48",
+      lineHeight: "$64",
+    },
+  };
+
+  const spanStyle = {
+    fontSize: "20px",
+    lineHeight: "30px",
+    marginBottom: "40px",
+  };
 
   const flexStyle = {
     position: "absolute",
     top: 0,
     left: 0,
     zIndex: 10,
-    padding: "80px",
+    padding: "$80",
 
     "@smallScreen": {
       width: "100%",
     },
     "@mobile": {
       alignItems: "center",
-      padding: "40px",
+      padding: "$48",
     },
   };
 
@@ -41,25 +57,13 @@ function ActiveRecipe() {
 
       <FlexContainer
         height="100%"
-        width="70%"
+        width="85%"
         flexDirection="column"
         justifyContent="flex-end"
         css={flexStyle}
       >
-        <H1
-          css={{
-            color: "$white",
-            fontSize: "$80",
-            lineHeight: "$90",
-            textShadow: "4.357px 6.709px 34.58px rgba(0, 0, 0, 0.27)",
-            marginBottom: "$48",
-          }}
-        >
-          Lorem ipsum dolor sit amet.
-        </H1>
-        <Span
-          css={{ fontSize: "20px", lineHeight: "30px", marginBottom: "40px" }}
-        >
+        <H1 css={h1Style}>Pan Pizza with Sliced Beef Sosis</H1>
+        <Span css={spanStyle}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
           doloremque suscipit. Dolor earum officiis suscipit!
         </Span>
