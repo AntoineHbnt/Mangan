@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import FlexContainer from "../../../template/Container/FlexContainer";
 import { MobileLogo } from "../../UI/asset/logo/Logo";
-import ThreeLineMenuButton from "../../UI/ThreeLineMenuButton/ThreeLineMenuButton";
-import Menu from "./Menu/Menu";
-import SideMenu from "./SideMenu/SideMenu";
+import Menu from "./Tablet/Menu/Menu";
+import SideMenu from "./Mobile/SideMenu/SideMenu";
+import SideMenuButton from "./Mobile/SideMenuButton/SideMenuButton";
 
 function Header() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -31,6 +31,9 @@ function Header() {
     },
   };
 
+
+
+
   return (
     <FlexContainer
       alignItems="center"
@@ -41,10 +44,7 @@ function Header() {
     >
       <MobileLogo />
       <Menu />
-      <ThreeLineMenuButton
-        isOpen={isSideMenuOpen}
-        onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}
-      />
+      <SideMenuButton onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}/>
       {isSideMenuOpen && <SideMenu close={() => handleCloseSideMenu()}/>}
     </FlexContainer>
   );

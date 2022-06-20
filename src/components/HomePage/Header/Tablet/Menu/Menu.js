@@ -1,6 +1,6 @@
 import React from "react";
-import FlexContainer from "../../../../template/Container/FlexContainer";
-import { NavItem } from "../../../UI/asset/StyledTypography";
+import FlexContainer from "../../../../../template/Container/FlexContainer";
+import { NavItem } from "../../../../UI/asset/StyledTypography";
 
 function Menu() {
   

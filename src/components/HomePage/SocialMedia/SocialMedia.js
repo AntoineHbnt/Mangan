@@ -11,6 +11,8 @@ import { Span } from "../../UI/asset/StyledTypography";
 
 function SocialMedia() {
   const anchorStyle = {
+    display: "flex",
+    flex: 1,
     "& > svg": {
       fill: "$gray",
     },
@@ -20,9 +22,11 @@ function SocialMedia() {
   };
 
   return (
-    <FlexContainer flexDirection="column" gap="22px">
-      <Span css={{ color: "$white" }}>Follow our Social Media</Span>
-      <FlexContainer gap="14px">
+    <FlexContainer width="100%" flexDirection="column" gap="22px">
+      <Span css={{ fontSize: "$12", color: "$white" }}>
+        Follow our Social Media
+      </Span>
+      <FlexContainer width="100%">
         <Anchor href="https://twitter.com/CelistoDev" css={anchorStyle}>
           <InstagramIcon />
         </Anchor>

@@ -1,8 +1,9 @@
 import React from "react";
+import Svg from ".";
 
 export default function ThreeLineMenu() {
   return (
-    <svg
+    <Svg
       width="32"
       height="32"
       viewBox="0 0 32 32"
@@ -12,6 +13,6 @@ export default function ThreeLineMenu() {
       <path d="M32 0H0V5.98737H32V0Z" fill="white" />
       <path d="M32 26.0126H0V32H32V26.0126Z" fill="white" />
       <path d="M32 13.0105H0V18.9979H32V13.0105Z" fill="white" />
-    </svg>
+    </Svg>
   );
 }
