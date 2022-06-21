@@ -1,6 +1,6 @@
 import React from "react";
-import Homepage from "./pages/Homepage/Homepage";
-import Container from "./template/Container/Container";
+import Homepage from "./pages/Homepage/Homepage"
+import Container from "./components/UI/atoms/Container/Container";
 
 function App() {
   return (
