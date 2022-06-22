@@ -8,6 +8,8 @@ import CookingTime from "../../molecules/CookingTime/CookingTime";
 import RecipeCategory from "../../atoms/RecipeCategory/RecipeCategory";
 import Sidebar from "../../atoms/Sidebar/Sidebar";
 import FilterCategory from "../../molecules/FilterCategory/FilterCategory";
+import Button from "../../atoms/Button/Button";
+import SelectInput from "../../molecules/SelectInput/SelectInput";
 
 function RecipesFilter() {
   return (
@@ -30,6 +32,11 @@ function RecipesFilter() {
       <FilterCategory label="Cooking Time">
         <CookingTime />
       </FilterCategory>
+      <FilterCategory label="Stars">
+        <SelectInput options={["5 Stars","4 Stars","3 Stars","2 Stars","1 Stars"]}/>
+      </FilterCategory>
+
+      <Button value="Refine Search" />
     </Sidebar>
   );
 }
