@@ -1,11 +1,10 @@
 import React from 'react';
-import FlexContainer from '../../components/UI/atoms/Container/FlexContainer';
+import RecipesFilter from '../../components/UI/organism/RecipesFilter/RecipesFilter';
+import GridSidebarPage from '../../template/GridSidebarPage';
 
 function Recipes() {
     return ( 
-        <FlexContainer>
-            test
-        </FlexContainer>
+        <GridSidebarPage sidebar={<RecipesFilter/>} content={<div>content</div>}/>
      );
 }
 

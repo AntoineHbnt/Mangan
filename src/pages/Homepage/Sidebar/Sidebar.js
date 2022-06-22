@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../../components/UI/atoms/Container/Container";
 import FlexContainer from "../../../components/UI/atoms/Container/FlexContainer";
-import { Logo } from "../../../asset/logo/Logo";
+import { HomeLogo } from "../../../asset/logo/Logo";
 import Footer from "../Footer/Footer";
 import Menu from "./Menu/Menu";
 
@@ -19,7 +19,7 @@ function Sidebar() {
   return (
     <Container width="fit-content" padding="$36" css={containerStyle}>
       <FlexContainer height="100%" flexDirection="column" css={{ gap: "$30" }}>
-        <Logo css={{ transform: "scale(0.5)" }} />
+        <HomeLogo css={{ transform: "scale(0.5)" }} />
         <FlexContainer
           flexDirection="column"
           justifyContent="space-between"

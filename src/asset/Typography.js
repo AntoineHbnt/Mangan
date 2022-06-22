@@ -39,11 +39,28 @@ export const Copyright = styled("span", {
 });
 
 export const NavItem = styled("span", {
-    fontSize: '$18',
-    fontWeight: '400',
-    fontFamily: '$poppins',
-    lineHeight: '58px',
-    
+  fontSize: "$18",
+  fontWeight: "400",
+  fontFamily: "$poppins",
+  lineHeight: "58px",
+  color: "$black",
+
+  variants: {
+    active: {
+      true: {
+        fontWeight: 600,
+        color: "$red",
+      },
+    },
+  },
+});
+
+export const Filter = styled("span", {
+  fontSize: "$18",
+  fontWeight: "400",
+  fontFamily: "$poppins",
+  lineHeight: "58px",
+  color: "$gray"
 })
 
 export const Pseudo = styled("span", {
