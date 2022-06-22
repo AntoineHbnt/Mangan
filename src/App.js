@@ -1,11 +1,11 @@
 import React from "react";
-import Homepage from "./pages/Homepage/Homepage"
 import Container from "./components/UI/atoms/Container/Container";
+import Recipes from "./pages/Recipes/Recipes";
 
 function App() {
   return (
     <Container width="100vw" height="100vh">
-      <Homepage />
+      <Recipes/>
     </Container>
   );
 }
