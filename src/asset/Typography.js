@@ -60,8 +60,8 @@ export const Filter = styled("span", {
   fontWeight: "400",
   fontFamily: "$poppins",
   lineHeight: "58px",
-  color: "$gray"
-})
+  color: "$gray",
+});
 
 export const Pseudo = styled("span", {
   fontSize: "$20",
