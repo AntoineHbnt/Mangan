@@ -16,7 +16,8 @@ function SelectSort({ options }) {
     color: "$black",
     fontFamily: "$poppins",
     fontWeight: 600,
-    border: "none",
+    border: "0px",
+    outline: "0px",
   });
 
   return (

@@ -1,11 +1,11 @@
 import React from 'react';
-import ListContent from '../../components/UI/organism/ListContent/ListContent';
+import RecipesListContent from '../../components/UI/organism/RecipesListContent/RecipesListContent';
 import RecipesFilter from '../../components/UI/organism/RecipesFilter/RecipesFilter';
 import GridSidebarPage from '../../template/GridSidebarPage';
 
 function Recipes() {
     return ( 
-        <GridSidebarPage sidebar={<RecipesFilter/>} content={<ListContent/>}/>
+        <GridSidebarPage sidebar={<RecipesFilter/>} content={<RecipesListContent/>}/>
      );
 }
 
