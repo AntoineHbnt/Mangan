@@ -7,7 +7,6 @@ import RecipeCardDescription from "../RecipeCardDescription/RecipeCardDescriptio
 import RecipeCardPicture from "../RecipeCardPicture/RecipeCardPicture";
 
 function RecipeCard() {
-
   const CardContainer = styled("div", {
     position: "relative",
     width: "fit-content",
@@ -22,14 +21,14 @@ function RecipeCard() {
     transition: "all .1s ease",
     borderRadius: "8px",
 
-    "& .btn": {
+    "& > input": {
       display: "none",
     },
 
     "&:hover": {
       background: "$white",
       boxShadow: "0px 18px 42.32px 3.68px rgba(90, 90, 90, 0.3)",
-      "& .btn": {
+      "& > input": {
         display: "block",
       },
     },
@@ -49,7 +48,7 @@ function RecipeCard() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, culpa.{" "}
         </RecipeCardDescription>
         <RecipeCardChefInfo />
-        <Button ClassName="btn" value="View Recipe" />
+        <Button value="View Recipe" />
       </FlexContainer>
     </CardContainer>
   );
