@@ -1,5 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
+import PropTypes, { string } from "prop-types";
+import { nanoid } from "nanoid";
 import { styled } from "@stitches/react";
 import FlexContainer from "../../atoms/Container/FlexContainer";
 import SortIcon from "../../../../asset/icons/Sort";
@@ -33,7 +34,9 @@ function SelectSort({ options }) {
         <Span>Sort By:</Span>
         <Select>
           {options.map((elem) => (
-            <option value={elem}>{elem}</option>
+            <option key={nanoid()} value={elem}>
+              {elem}
+            </option>
           ))}
         </Select>
       </FlexContainer>
@@ -42,7 +45,7 @@ function SelectSort({ options }) {
 }
 
 SelectSort.propTypes = {
-  options: PropTypes.shape([]).isRequired,
+  options: PropTypes.arrayOf(string).isRequired,
 };
 
 export default SelectSort;

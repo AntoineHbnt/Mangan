@@ -5,7 +5,7 @@ import { styled } from "../../../../Themes";
 function Button({ value, css }) {
   const StyledInputSubmit = styled("input", {
     position: "relative",
-    width: "220px",
+    width: "100%",
     height: "50px",
     background: "$red",
     color: "$white",

@@ -6,23 +6,31 @@ import RecipeCard from "../../molecules/RecipeCard/RecipeCard";
 
 function RecipesListContent() {
   const gridStyle = {
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
     rowGap: "20px",
+    flexWrap: "wrap",
+
+    "& > div": {
+      width: `33.33%`,
+      height: "550px",
+    }
   };
 
   return (
     <FlexContainer width="100%" flexDirection="column">
-      <Container width="100%" height="fit-content" css={{marginBottom: "50px"}}>
+      <Container
+        width="100%"
+        height="fit-content"
+        css={{ marginBottom: "50px" }}
+      >
         <ContentHeader label="Discover Our Community Recipes" />
       </Container>
       <FlexContainer width="100%" height="fit-content" css={gridStyle}>
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
-        <RecipeCard />
+        <RecipeCard key="1" id="1" />
+        <RecipeCard key="2" id="2"/>
+        <RecipeCard key="3" id="3"/>
+        <RecipeCard key="4" id="4"/>
+        <RecipeCard key="5" id="5"/>
+        <RecipeCard key="6" id="6"/>
       </FlexContainer>
     </FlexContainer>
   );

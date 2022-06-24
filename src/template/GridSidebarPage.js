@@ -17,7 +17,7 @@ function GridSidebarPage({ sidebar, content }) {
     display: "grid",
     gridTemplateColumns: "1fr 3fr",
     gap: "30px",
-    maxWidth: "1070px",
+    maxWidth: "1170px",
   };
 
   return (

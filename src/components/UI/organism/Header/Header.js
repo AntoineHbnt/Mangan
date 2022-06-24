@@ -8,13 +8,13 @@ function Header() {
     display: "grid",
     gridTemplateColumns: "1fr 3fr",
     gap: "30px",
-    maxWidth: "1070px",
+    maxWidth: "1170px",
   };
 
   return (
     <FlexContainer
       width="100%"
-      height="100%"
+      height="100px"
       justifyContent="center"
       css={{ background: "$white" }}
     >

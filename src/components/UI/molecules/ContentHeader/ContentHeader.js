@@ -8,7 +8,7 @@ function ContentHeader({ label }) {
   const titleStyle = {
     display: "inline-block",
     lineHeight: "1.2",
-    width: '60%'
+    width: '55%'
   };
 
   return (

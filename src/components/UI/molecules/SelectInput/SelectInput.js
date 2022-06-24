@@ -1,5 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { nanoid } from "nanoid";
+import PropTypes, { string } from "prop-types";
 import { styled } from "@stitches/react";
 
 function SelectInput({ options }) {
@@ -16,14 +17,16 @@ function SelectInput({ options }) {
   return (
     <Select>
       {options.map((elem) => (
-        <option value={elem}>{elem}</option>
+        <option key={nanoid()} value={elem}>
+          {elem}
+        </option>
       ))}
     </Select>
   );
 }
 
 SelectInput.propTypes = {
-  options: PropTypes.shape([]).isRequired,
+  options: PropTypes.arrayOf(string).isRequired,
 };
 
 export default SelectInput;

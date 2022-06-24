@@ -15,7 +15,7 @@ function CookingTime() {
   });
 
   return (
-    <Container height="64px">
+    <Container height="64px" css={{marginTop: "25px"}}>
       <Line />
       <FlexContainer
         width="100%"
