@@ -8,7 +8,7 @@ function SideMenuButton({ onClick, isOpen }) {
   const StyledButton = styled("button", {
     display: "none",
     width: "fit-content",
-    hieght: "fit-content",
+    height: "fit-content",
     background: "none",
     border: "none",
 
