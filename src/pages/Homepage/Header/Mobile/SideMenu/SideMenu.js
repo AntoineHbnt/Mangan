@@ -4,8 +4,8 @@ import { keyframes } from "@stitches/react";
 import FlexContainer from "../../../../../components/UI/atoms/Container/FlexContainer";
 import SocialMedia from "../../../SocialMedia/SocialMedia";
 import { styled } from "../../../../../Themes";
-import { NavItem } from "../../../../../asset/Typography";
 import SideMenuButton from "../SideMenuButton/SideMenuButton";
+import LinkItem from "../../../../../components/UI/atoms/LinkItem/LinkItem";
 
 function SideMenu({ close }) {
   const showSideMenu = keyframes({
@@ -74,11 +74,11 @@ function SideMenu({ close }) {
       >
         <FlexContainer gap="$8" flexDirection="column">
           <SideMenuButton isOpen onClick={close} />
-          <NavItem css={navItemStyle}>Home</NavItem>
-          <NavItem css={navItemStyle}>Recipes</NavItem>
-          <NavItem css={navItemStyle}>Chef</NavItem>
-          <NavItem css={navItemStyle}>Blog</NavItem>
-          <NavItem css={navItemStyle}>Contact</NavItem>
+          <LinkItem css={navItemStyle} path="/" label="Home" active />
+          <LinkItem css={navItemStyle} path="/recipes" label="Recipes" />
+          <LinkItem css={navItemStyle} path="/chefs" label="Chefs" />
+          <LinkItem css={navItemStyle} path="/blog" label="Blog" />
+          <LinkItem css={navItemStyle} path="/contact" label="Contact" />
         </FlexContainer>
         <SocialMedia />
       </FlexContainer>
