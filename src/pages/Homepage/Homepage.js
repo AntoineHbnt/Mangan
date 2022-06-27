@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../../components/HomePage/Header/Header";
-import PictureGrid from "../../components/HomePage/PictureGrid/PictureGrid";
-import Sidebar from "../../components/HomePage/Sidebar/Sidebar";
-import FlexContainer from "../../template/Container/FlexContainer";
+import Header from "./Header/Header";
+import PictureGrid from "./PictureGrid/PictureGrid";
+import Sidebar from "./Sidebar/Sidebar";
+import FlexContainer from "../../components/UI/atoms/Container/FlexContainer";
 
 function Homepage() {
   return (
