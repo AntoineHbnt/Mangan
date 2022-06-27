@@ -7,6 +7,16 @@ function RecipeCategory({ icon, label }) {
   const containerStyle = {
     borderBottom: "1px solid $light_gray",
     borderBottomStyle: "dashed",
+    cursor: "pointer",
+
+    "&:hover": {
+      "& svg": {
+        fill: "$red"
+      },
+      "& span":{
+        color: "$red"
+      }
+    }
   };
 
   return (
@@ -15,7 +25,7 @@ function RecipeCategory({ icon, label }) {
       alignItems="center"
       css={containerStyle}
     >
-      <FlexContainer css={{ flex: 1 }}>{icon}</FlexContainer>
+      {icon && <FlexContainer css={{ flex: 1 }}>{icon}</FlexContainer>}
       <FlexContainer css={{ flex: 3 }}>
         <Filter>{label}</Filter>
       </FlexContainer>
@@ -24,8 +34,12 @@ function RecipeCategory({ icon, label }) {
 }
 
 RecipeCategory.propTypes = {
-  icon: PropTypes.node.isRequired,
+  icon: PropTypes.node,
   label: PropTypes.string.isRequired,
+};
+
+RecipeCategory.defaultProps = {
+  icon: null,
 };
 
 export default RecipeCategory;

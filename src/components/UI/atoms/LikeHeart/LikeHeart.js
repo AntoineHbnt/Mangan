@@ -10,6 +10,7 @@ function LikeHeart({ isLiked, onClick }) {
     background: "none",
     border: "none",
     padding: "0",
+    cursor: "pointer",
   });
 
   const heartStyle = {

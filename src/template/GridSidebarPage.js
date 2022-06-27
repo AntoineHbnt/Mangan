@@ -4,7 +4,7 @@ import Container from "../components/UI/atoms/Container/Container";
 import FlexContainer from "../components/UI/atoms/Container/FlexContainer";
 import Header from "../components/UI/organism/Header/Header";
 
-function GridSidebarPage({ sidebar, content }) {
+function GridSidebarPage({ sidebar, content, footer }) {
   const mainContainerStyle = {
     minHeight: "100vh",
   };
@@ -38,7 +38,7 @@ function GridSidebarPage({ sidebar, content }) {
       <FlexContainer
         justifyContent="center"
         width="100%"
-        height="100%"
+        height="fit-content"
         css={contentContainerStyle}
       >
         <FlexContainer width="100%" height="100%" css={contentStyle}>
@@ -50,6 +50,7 @@ function GridSidebarPage({ sidebar, content }) {
           </Container>
         </FlexContainer>
       </FlexContainer>
+      {footer}
     </FlexContainer>
   );
 }
@@ -57,6 +58,7 @@ function GridSidebarPage({ sidebar, content }) {
 GridSidebarPage.propTypes = {
   sidebar: PropTypes.node.isRequired,
   content: PropTypes.node.isRequired,
+  footer: PropTypes.node.isRequired,
 };
 
 export default GridSidebarPage;
