@@ -4,27 +4,21 @@ import { Logo } from "../../../../asset/logo/Logo";
 import Navbar from "../../molecules/Navbar/Navbar";
 
 function Header() {
-  const headerContainerStyle = {
-    display: "grid",
-    gridTemplateColumns: "1fr 3fr",
-    gap: "30px",
-    maxWidth: "1170px",
-  };
-
   return (
     <FlexContainer
       width="100%"
-      height="100px"
-      justifyContent="center"
-      css={{ background: "$white" }}
+      height="100%"
+      alignItems="center"
+      css={{
+        margin: "auto",
+        minHeight: "100px",
+        maxWidth: "1170px",
+      }}
     >
-      <FlexContainer
-        width="100%"
-        height="100%"
-        alignItems="center"
-        css={headerContainerStyle}
-      >
+      <FlexContainer css={{ flex: 1 }}>
         <Logo />
+      </FlexContainer>
+      <FlexContainer css={{ marginLeft: "30px",flex: 3 }}>
         <Navbar />
       </FlexContainer>
     </FlexContainer>

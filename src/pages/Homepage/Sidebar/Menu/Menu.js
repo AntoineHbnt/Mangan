@@ -3,58 +3,58 @@ import PropTypes from "prop-types";
 import Container from "../../../../components/UI/atoms/Container/Container";
 import FlexContainer from "../../../../components/UI/atoms/Container/FlexContainer";
 import { HorizontalDashedLine } from "../../../../asset/StyledAsset";
-import { NavItem } from "../../../../asset/Typography";
+import LinkItem from "../../../../components/UI/atoms/LinkItem/LinkItem";
 
 function Menu() {
   return (
     <Container height="fit-content">
-      <Item label="Home" isActive />
-      <Item label="Recipes" />
-      <Item label="Chef" />
-      <Item label="Blog" />
-      <Item label="Contact" />
+      <Item label="Home" path="/" active />
+      <Item label="Recipes" path="/recipes"  />
+      <Item label="Chefs" path="/chefs" />
+      <Item label="Blog" path="/blog" />
+      <Item label="Contact" path="/contact" />
     </Container>
   );
 }
 
-function Item({ label, isActive }) {
+function Item({ label, active, path }) {
   const hoverStyle = {
     cursor: "pointer",
     "&:hover": {
-      "& > span": {
+      "& span": {
         color: "white",
       },
       "&: > div": {
-        borderColor: isActive ? "$red" : "$white",
+        borderColor: active ? "$red" : "$white",
       },
     },
   };
   
   const navItemStyle = {
     transition: "all .1s ease-in",
-    color: isActive ? "$white" : "$gray",
+    color: active ? "$white" : "$gray",
   };
 
   const dashedLineStyle = {
-    borderColor: isActive && "$red",
+    borderColor: active && "$red",
   };
 
   return (
     <FlexContainer height="fit-content" flexDirection="column" css={hoverStyle}>
-      <NavItem css={navItemStyle}>{label}</NavItem>
+      <LinkItem label={label} path={path} css={navItemStyle}/>
       <HorizontalDashedLine css={dashedLineStyle} />
     </FlexContainer>
   );
 }
 
 Item.propTypes = {
-  label: PropTypes.string,
-  isActive: PropTypes.bool,
+  label: PropTypes.string.isRequired,
+  active: PropTypes.bool,
+  path: PropTypes.string.isRequired,
 };
 
 Item.defaultProps = {
-  label: "",
-  isActive: false,
+  active: false,
 };
 
 export default Menu;

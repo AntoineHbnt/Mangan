@@ -96,6 +96,7 @@ pre {
  */
 
 a {
+  all:unset;
   background-color: transparent;
 }
 
