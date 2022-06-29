@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Span } from '../../../../asset/Typography';
+import { Span } from '@asset/Typography';
 import { ChefInfo, Img, ProfilPicture, Wrapper } from './RecipeCardChefInfo.styles';
 
 function RecipeCardChefInfo({name, rank, src}) {

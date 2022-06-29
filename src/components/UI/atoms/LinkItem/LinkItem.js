@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { NavItem } from '../../../../asset/Typography';
+import { NavItem } from '@asset/Typography';
 
 function LinkItem({label, path, active, css}) {
     return ( 

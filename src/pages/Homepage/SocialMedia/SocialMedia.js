@@ -1,8 +1,8 @@
 import React from "react";
-import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from "../../../asset/icons/SocialMedia";
-import { Span } from "../../../asset/Typography";
-import Anchor from "../../../components/UI/atoms/Anchor/Anchor";
-import FlexContainer from "../../../components/UI/atoms/Container/FlexContainer";
+import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from "@asset/icons/SocialMedia";
+import { Span } from "@asset/Typography";
+import Anchor from "@atoms/Anchor/Anchor";
+import FlexContainer from "@atoms/Container/FlexContainer";
 
 
 function SocialMedia() {

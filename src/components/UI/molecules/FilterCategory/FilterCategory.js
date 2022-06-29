@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H2 } from "../../../../asset/Typography";
+import { H2 } from "@asset/Typography";
 import { ChildrenWrapper, Wrapper } from "./FilterCategory.styles";
 
 function FilterCategory({ label, children }) {

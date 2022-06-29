@@ -1,5 +1,5 @@
 import React from "react";
-import LinkItem from "../../atoms/LinkItem/LinkItem";
+import LinkItem from "@atoms/LinkItem/LinkItem";
 import Wrapper from "./Navbar.styles";
 
 function Navbar() {

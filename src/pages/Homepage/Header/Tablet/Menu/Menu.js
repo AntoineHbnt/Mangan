@@ -1,6 +1,6 @@
 import React from "react";
-import FlexContainer from "../../../../../components/UI/atoms/Container/FlexContainer";
-import LinkItem from "../../../../../components/UI/atoms/LinkItem/LinkItem";
+import FlexContainer from "@atoms/Container/FlexContainer";
+import LinkItem from "@atoms/LinkItem/LinkItem";
 
 function Menu() {
   const flexStyle = {

@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@stitches-config";
 import PropTypes from "prop-types";
-import HeartIcon from "../../../../asset/icons/Heart";
+import HeartIcon from "@asset/icons/Heart";
 
 function LikeHeart({ isLiked, onClick }) {
   const ButtonStyled = styled("button", {

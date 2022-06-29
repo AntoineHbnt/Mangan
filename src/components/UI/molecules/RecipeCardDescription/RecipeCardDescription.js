@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H3, Span } from "../../../../asset/Typography";
+import { H3, Span } from "@asset/Typography";
 import Wrapper from "./RecipeCardDescription.styles";
 
 function RecipeCardDescription({ title, children }) {

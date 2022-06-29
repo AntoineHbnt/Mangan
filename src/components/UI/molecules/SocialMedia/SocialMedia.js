@@ -4,9 +4,9 @@ import {
   InstagramIcon,
   TwitterIcon,
   YoutubeIcon,
-} from "../../../asset/icons/SocialMedia";
-import { Span } from "../../../asset/Typography";
-import Anchor from "../../../components/UI/atoms/Anchor/Anchor";
+} from "@asset/icons/SocialMedia";
+import { Span } from "@asset/Typography";
+import Anchor from "@atoms/Anchor/Anchor";
 import { AnchorList, Wrapper } from "./SocialMedia.styles";
 
 function SocialMedia() {

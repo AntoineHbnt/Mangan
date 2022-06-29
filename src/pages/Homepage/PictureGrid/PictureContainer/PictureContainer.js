@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@stitches-config";
-import Container from "../../../../components/UI/atoms/Container/Container";
+import Container from "@atoms/Container/Container";
 
 function PictureContainer() {
   const PictureFilter = styled("div", {

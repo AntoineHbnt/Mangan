@@ -1,8 +1,8 @@
 import React from 'react';
-import RecipesListContent from '../../components/UI/organism/RecipesListContent/RecipesListContent';
-import RecipesFilter from '../../components/UI/organism/RecipesFilter/RecipesFilter';
-import Footer from '../../components/UI/organism/Footer/Footer';
-import GridSidebarPage from '../../template/GridSidebarPage/GridSidebarPage';
+import RecipesListContent from '@organisms/RecipesListContent/RecipesListContent';
+import RecipesFilter from '@organisms/RecipesFilter/RecipesFilter';
+import Footer from '@organisms/Footer/Footer';
+import GridSidebarPage from '@templates/GridSidebarPage/GridSidebarPage';
 
 function Recipes() {
     return ( 

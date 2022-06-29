@@ -1,15 +1,15 @@
 import React from "react";
-import AllCategoriesIcon from "../../../../asset/icons/RecipeCategories/AllCategoriesIcon";
-import BeveragesIcon from "../../../../asset/icons/RecipeCategories/BeveragesIcon";
-import DessertIcon from "../../../../asset/icons/RecipeCategories/DessertsIcon";
-import MainDishesIcon from "../../../../asset/icons/RecipeCategories/MainDishesIcon";
-import SoupsSaladsIcon from "../../../../asset/icons/RecipeCategories/SoupsSaladsIcon";
-import CookingTime from "../../molecules/CookingTime/CookingTime";
-import RecipeCategory from "../../atoms/RecipeCategory/RecipeCategory";
-import Sidebar from "../../atoms/Sidebar/Sidebar";
-import FilterCategory from "../../molecules/FilterCategory/FilterCategory";
-import Button from "../../atoms/Button/Button";
-import SelectInput from "../../molecules/SelectInput/SelectInput";
+import AllCategoriesIcon from "@asset/icons/RecipeCategories/AllCategoriesIcon";
+import BeveragesIcon from "@asset/icons/RecipeCategories/BeveragesIcon";
+import DessertIcon from "@asset/icons/RecipeCategories/DessertsIcon";
+import MainDishesIcon from "@asset/icons/RecipeCategories/MainDishesIcon";
+import SoupsSaladsIcon from "@asset/icons/RecipeCategories/SoupsSaladsIcon";
+import CookingTime from "@molecules/CookingTime/CookingTime";
+import RecipeCategory from "@atoms/RecipeCategory/RecipeCategory";
+import Sidebar from "@atoms/Sidebar/Sidebar";
+import FilterCategory from "@molecules/FilterCategory/FilterCategory";
+import Button from "@atoms/Button/Button";
+import SelectInput from "@molecules/SelectInput/SelectInput";
 
 function RecipesFilter() {
   return (

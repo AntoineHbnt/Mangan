@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H1 } from "../../../../asset/Typography";
-import SelectSort from "../SelectSort/SelectSort";
+import { H1 } from "@asset/Typography";
+import SelectSort from "@molecules/SelectSort/SelectSort";
 import Wrapper from "./ContentHeader.styles";
 
 function ContentHeader({ label }) {
