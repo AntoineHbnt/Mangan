@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { styled } from "../../../../Themes";
 
-function Button({ value, css }) {
+function Button({ value, onClick, css }) {
   const StyledInputSubmit = styled("input", {
     position: "relative",
     width: "100%",
@@ -21,16 +21,25 @@ function Button({ value, css }) {
     },
   });
 
-  return <StyledInputSubmit css={css} type="submit" value={value} />;
+  return (
+    <StyledInputSubmit
+      css={css}
+      type="submit"
+      value={value}
+      onClick={onClick}
+    />
+  );
 }
 
 Button.propTypes = {
   value: PropTypes.string,
   css: PropTypes.shape({}),
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   value: "",
+  onClick: {},
   css: {},
 };
 

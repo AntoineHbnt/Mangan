@@ -6,7 +6,8 @@ function Sidebar({ children }) {
   const containerStyle = {
     border: "1px solid $light_gray",
     borderRadius: "6px",
-    padding: "50px 25px"
+    padding: "50px 25px",
+    background: "$white",
   };
 
   return (

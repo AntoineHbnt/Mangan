@@ -13,6 +13,7 @@ function Header() {
         margin: "auto",
         minHeight: "100px",
         maxWidth: "1170px",
+        zIndex: 20,
       }}
     >
       <FlexContainer css={{ flex: 1 }}>

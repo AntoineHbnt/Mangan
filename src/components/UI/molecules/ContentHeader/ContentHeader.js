@@ -8,13 +8,29 @@ function ContentHeader({ label }) {
   const titleStyle = {
     display: "inline-block",
     lineHeight: "1.2",
-    width: '55%'
+    width: "55%",
+
+    "@tablet": {
+      width: "100%",
+      marginBottom: "$32",
+    }
+  };
+
+  const containerStyle = {
+    "@tablet": {
+      flexDirection: "column",
+    },
   };
 
   return (
-    <FlexContainer width="100%" justifyContent="space-between" alignItems="center">
-        <H1 css={titleStyle}>{label}</H1>
-        <SelectSort options={["Date Added"]} />
+    <FlexContainer
+      width="100%"
+      justifyContent="space-between"
+      alignItems="center"
+      css={containerStyle}
+    >
+      <H1 css={titleStyle}>{label}</H1>
+      <SelectSort options={["Date Added"]} />
     </FlexContainer>
   );
 }
