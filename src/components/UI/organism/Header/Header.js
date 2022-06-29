@@ -1,28 +1,18 @@
 import React from "react";
-import FlexContainer from "../../atoms/Container/FlexContainer";
 import { Logo } from "../../../../asset/logo/Logo";
 import Navbar from "../../molecules/Navbar/Navbar";
+import { LogoContainer, NavbarContainer, Wrapper } from "./Header.styles";
 
 function Header() {
   return (
-    <FlexContainer
-      width="100%"
-      height="100%"
-      alignItems="center"
-      css={{
-        margin: "auto",
-        minHeight: "100px",
-        maxWidth: "1170px",
-        zIndex: 20,
-      }}
-    >
-      <FlexContainer css={{ flex: 1 }}>
+    <Wrapper>
+      <LogoContainer>
         <Logo />
-      </FlexContainer>
-      <FlexContainer css={{ marginLeft: "30px",flex: 3 }}>
+      </LogoContainer>
+      <NavbarContainer>
         <Navbar />
-      </FlexContainer>
-    </FlexContainer>
+      </NavbarContainer>
+    </Wrapper>
   );
 }
 

@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { keyframes } from "@stitches/react";
+import { keyframes, styled } from "@stitches/react";
 import FlexContainer from "../../../../../components/UI/atoms/Container/FlexContainer";
 import SocialMedia from "../../../SocialMedia/SocialMedia";
-import { styled } from "../../../../../Themes";
 import SideMenuButton from "../SideMenuButton/SideMenuButton";
 import LinkItem from "../../../../../components/UI/atoms/LinkItem/LinkItem";
 

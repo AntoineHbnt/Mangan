@@ -1,10 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "@stitches/react";
+import { styled } from "@stitches-config";
 import { Span } from "../../../../asset/Typography";
-import FlexContainer from "../Container/FlexContainer";
 
 function CookingTimeOption({ label, active, css }) {
+
+  const Wrapper = styled("div", {
+    flexDirection: "column",
+    display: "flex",
+    justifyContent: "center",
+  })
+
   const Circle = styled("div", {
     width: "10px",
     height: "10px",
@@ -33,10 +39,10 @@ function CookingTimeOption({ label, active, css }) {
   };
 
   return (
-    <FlexContainer height="100%"  flexDirection="column" justifyContent="center" css={css}>
+    <Wrapper css={css}>
       <Span css={{ ...spanStyle }}>{active && label}</Span>
       <Circle active={active} />
-    </FlexContainer>
+    </Wrapper>
   );
 }
 

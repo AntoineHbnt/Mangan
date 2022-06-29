@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "@stitches/react";
+import { styled } from "@stitches-config";
 import PropTypes from "prop-types";
 import HeartIcon from "../../../../asset/icons/Heart";
 

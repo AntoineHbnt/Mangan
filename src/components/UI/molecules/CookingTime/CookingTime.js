@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "../../../../Themes";
+import { styled } from "@stitches-config";
 import Container from "../../atoms/Container/Container";
 import FlexContainer from "../../atoms/Container/FlexContainer";
 import CookingTimeOption from "../../atoms/CookingTimeOption/CookingTimeOption";

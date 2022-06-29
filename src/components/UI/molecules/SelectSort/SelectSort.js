@@ -1,36 +1,15 @@
 import React from "react";
 import PropTypes, { string } from "prop-types";
 import { nanoid } from "nanoid";
-import { styled } from "@stitches/react";
-import FlexContainer from "../../atoms/Container/FlexContainer";
 import SortIcon from "../../../../asset/icons/Sort";
 import { Span } from "../../../../asset/Typography";
+import { Select, SelectContent, Wrapper } from "./SelectSort.styles";
 
 function SelectSort({ options }) {
-  const containerStyle = {
-    padding: "15px 30px",
-    border: "2px solid $light_gray",
-    borderRadius: 999,
-  };
-
-  const Select = styled("select", {
-    color: "$black",
-    fontFamily: "$poppins",
-    fontWeight: 600,
-    border: "0px",
-    outline: "0px",
-  });
-
   return (
-    <FlexContainer
-      width="295px"
-      height="50px"
-      alignItems="center"
-      justifyContent="space-between"
-      css={containerStyle}
-    >
+    <Wrapper>
       <SortIcon />
-      <FlexContainer alignItems="center">
+      <SelectContent>
         <Span>Sort By:</Span>
         <Select>
           {options.map((elem) => (
@@ -39,8 +18,8 @@ function SelectSort({ options }) {
             </option>
           ))}
         </Select>
-      </FlexContainer>
-    </FlexContainer>
+      </SelectContent>
+    </Wrapper>
   );
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { H1 } from "../../../../asset/Typography";
-import FlexContainer from "../../atoms/Container/FlexContainer";
 import SelectSort from "../SelectSort/SelectSort";
+import Wrapper from "./ContentHeader.styles";
 
 function ContentHeader({ label }) {
   const titleStyle = {
@@ -16,22 +16,11 @@ function ContentHeader({ label }) {
     }
   };
 
-  const containerStyle = {
-    "@tablet": {
-      flexDirection: "column",
-    },
-  };
-
   return (
-    <FlexContainer
-      width="100%"
-      justifyContent="space-between"
-      alignItems="center"
-      css={containerStyle}
-    >
+    <Wrapper>
       <H1 css={titleStyle}>{label}</H1>
       <SelectSort options={["Date Added"]} />
-    </FlexContainer>
+    </Wrapper>
   );
 }
 

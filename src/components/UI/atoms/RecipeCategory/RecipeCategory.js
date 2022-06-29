@@ -1,35 +1,44 @@
 import React from "react";
+import { styled } from "@stitches-config";
 import PropTypes from "prop-types";
-import FlexContainer from "../Container/FlexContainer";
 import { Filter } from "../../../../asset/Typography";
 
 function RecipeCategory({ icon, label }) {
-  const containerStyle = {
+  const Wrapper = styled("div", {
+    display: "flex",
+    width: "100%",
+    alignItems: "center",
     borderBottom: "1px solid $light_gray",
     borderBottomStyle: "dashed",
     cursor: "pointer",
 
     "&:hover": {
       "& svg": {
-        fill: "$red"
+        fill: "$red",
       },
-      "& span":{
-        color: "$red"
-      }
-    }
-  };
+      "& span": {
+        color: "$red",
+      },
+    },
+  });
+
+  const Icon = styled("div", {
+    display: "flex",
+    flex: 1,
+  });
+
+  const Label = styled("div", {
+    display: "flex",
+    flex: 3,
+  });
 
   return (
-    <FlexContainer
-      width="100%"
-      alignItems="center"
-      css={containerStyle}
-    >
-      {icon && <FlexContainer css={{ flex: 1 }}>{icon}</FlexContainer>}
-      <FlexContainer css={{ flex: 3 }}>
+    <Wrapper>
+      {icon && <Icon>{icon}</Icon>}
+      <Label>
         <Filter>{label}</Filter>
-      </FlexContainer>
-    </FlexContainer>
+      </Label>
+    </Wrapper>
   );
 }
 

@@ -1,37 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Container from "../components/UI/atoms/Container/Container";
-import FlexContainer from "../components/UI/atoms/Container/FlexContainer";
-import Header from "../components/UI/organism/Header/Header";
-import Button from "../components/UI/atoms/Button/Button";
+import Container from "../../components/UI/atoms/Container/Container";
+import FlexContainer from "../../components/UI/atoms/Container/FlexContainer";
+import Header from "../../components/UI/organism/Header/Header";
+import Button from "../../components/UI/atoms/Button/Button";
+import { ContentContainer, HeaderContainer, Wrapper } from "./GridSidepage.styles";
 
 function GridSidebarPage({ sidebar, content, footer }) {
   const [showFilter, setShowFilter] = React.useState(false);
-
-  React.useEffect(() => {
-    console.log(showFilter);
-  }, [showFilter]);
-
-  const mainContainerStyle = {
-    minHeight: "100vh",
-  };
-
-  const headerStyle = {
-    boxShadow: "0px 13px 29.12px 2.88px rgba(44, 44, 44, 0.07)",
-    "@smallScreen": {
-      padding: "0 $32",
-    },
-  };
-
-  const contentStyle = {
-    display: "flex",
-    padding: "100px 0",
-    gap: "30px",
-    maxWidth: "1170px",
-    "@smallScreen": {
-      padding: "$32",
-    },
-  };
 
   const sidebarStyle = {
     flex: 1,
@@ -78,18 +54,12 @@ function GridSidebarPage({ sidebar, content, footer }) {
   };
 
   return (
-    <FlexContainer
-      flexDirection="column"
-      width="100vw"
-      height="100%"
-      alignItems="center"
-      css={mainContainerStyle}
-    >
-      <Container width="100%" height="100px" css={headerStyle}>
+    <Wrapper>
+      <HeaderContainer>
         <Header />
-      </Container>
+      </HeaderContainer>
 
-      <FlexContainer width="100%" height="fit-content" css={contentStyle}>
+      <ContentContainer>
         <Container width="100%" height="100%" css={smallScreenSidebarStyle}>
           <FlexContainer
             width="100%"
@@ -128,9 +98,9 @@ function GridSidebarPage({ sidebar, content, footer }) {
         <Container width="100%" height="100%" css={{ flex: 3 }}>
           {content}
         </Container>
-      </FlexContainer>
+      </ContentContainer>
       {footer}
-    </FlexContainer>
+    </Wrapper>
   );
 }
 

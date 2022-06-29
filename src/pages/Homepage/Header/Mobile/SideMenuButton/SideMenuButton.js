@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "../../../../../Themes";
+import { styled } from "@stitches-config";
 import Cross from "../../../../../asset/icons/Cross";
 import ThreeLineMenu from "../../../../../asset/icons/ThreeLineMenuIcon";
 
