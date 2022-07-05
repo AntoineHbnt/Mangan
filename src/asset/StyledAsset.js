@@ -1,4 +1,5 @@
-import { styled } from "../Themes";
+import { styled } from "@stitches-config";
+
 
 export const VerticalLine = styled("div", {
   height: "100%",

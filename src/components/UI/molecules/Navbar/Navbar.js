@@ -1,6 +1,6 @@
 import React from "react";
-import FlexContainer from "../../atoms/Container/FlexContainer";
-import LinkItem from "../../atoms/LinkItem/LinkItem";
+import LinkItem from "@atoms/LinkItem/LinkItem";
+import Wrapper from "./Navbar.styles";
 
 function Navbar() {
   const linkStyle = {
@@ -11,13 +11,13 @@ function Navbar() {
   };
 
   return (
-    <FlexContainer width="fit-content" gap="55px">
+    <Wrapper>
       <LinkItem css={linkStyle} path="/" label="Home" />
       <LinkItem css={linkStyle} path="/recipes" label="Recipes" active />
       <LinkItem css={linkStyle} path="/chefs" label="Chefs" />
       <LinkItem css={linkStyle} path="/blog" label="Blog" />
       <LinkItem css={linkStyle} path="/contact" label="Contact" />
-    </FlexContainer>
+    </Wrapper>
   );
 }
 

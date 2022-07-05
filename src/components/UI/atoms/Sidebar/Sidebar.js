@@ -1,25 +1,21 @@
 import React from "react";
+import { styled } from "@stitches-config";
 import PropTypes from "prop-types";
-import FlexContainer from "../Container/FlexContainer";
 
 function Sidebar({ children }) {
-  const containerStyle = {
+  const Wrapper = styled("div", {
+    flexDirection: "column",
+    display: "flex",
+    width: "100%",
+    height: "fit-content",
+    gap: "50px",
     border: "1px solid $light_gray",
     borderRadius: "6px",
-    padding: "50px 25px"
-  };
+    padding: "50px 25px",
+    background: "$white",
+  });
 
-  return (
-    <FlexContainer
-      flexDirection="column"
-      width="100%"
-      height="fit-content"
-      gap="50px"
-      css={containerStyle}
-    >
-      {children}
-    </FlexContainer>
-  );
+  return <Wrapper>{children}</Wrapper>;
 }
 
 Sidebar.propTypes = {

@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "@stitches-config";
 import React from "react";
 import PropTypes from "prop-types";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { H3, Span } from "../../../../asset/Typography";
-import FlexContainer from "../../atoms/Container/FlexContainer";
+import { H3, Span } from "@asset/Typography";
+import Wrapper from "./RecipeCardDescription.styles";
 
 function RecipeCardDescription({ title, children }) {
   const spanStyle = {
@@ -13,10 +13,10 @@ function RecipeCardDescription({ title, children }) {
   };
 
   return (
-    <FlexContainer width="100%" flexDirection="column" gap="20px">
+    <Wrapper>
       <H3>{title}</H3>
       <Span css={{ spanStyle }}>{children}</Span>
-    </FlexContainer>
+    </Wrapper>
   );
 }
 

@@ -1,4 +1,4 @@
-import { styled } from "../../Themes";
+import { styled } from "@stitches-config";
 
 const Svg = styled("svg");
 

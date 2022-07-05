@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../../../../components/UI/atoms/Container/Container";
-import FlexContainer from "../../../../components/UI/atoms/Container/FlexContainer";
-import { H2 } from "../../../../asset/Typography";
+import Container from "@atoms/Container/Container";
+import FlexContainer from "@atoms/Container/FlexContainer";
+import { H2 } from "@asset/Typography";
 import PictureContainer from "../PictureContainer/PictureContainer";
 
 function Carousel() {

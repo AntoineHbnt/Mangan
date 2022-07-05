@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "@stitches/react";
-import FlexContainer from "../Container/FlexContainer";
-import StarIcon from "../../../../asset/icons/Star";
+import { styled } from "@stitches-config";
+import StarIcon from "@asset/icons/Star";
 
 function StarsEval({ value }) {
   const StyledValue = styled("span", {
@@ -11,24 +10,21 @@ function StarsEval({ value }) {
     fontFamily: "$poppins",
   });
 
-  const flexStyle = {
+  const Wrapper = styled("div", {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     width: "40px",
     height: "40px",
     borderRadius: "100%",
     border: "2px solid $light_gray",
-  };
+  });
 
   return (
-    <FlexContainer
-      alignItems="center"
-      justifyContent="center"
-      width="50px"
-      height="50px"
-      css={flexStyle}
-    >
+    <Wrapper>
       <StyledValue>{value}</StyledValue>
       <StarIcon css={{ width: "12px", fill: "$light_gray" }} />
-    </FlexContainer>
+    </Wrapper>
   );
 }
 

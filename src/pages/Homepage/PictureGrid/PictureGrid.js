@@ -1,7 +1,7 @@
 import { React } from "react";
-import FlexContainer from "../../../components/UI/atoms/Container/FlexContainer";
-import Button from "../../../components/UI/atoms/Button/Button";
-import { H1, Span } from "../../../asset/Typography";
+import FlexContainer from "@atoms/Container/FlexContainer";
+import Button from "@atoms/Button/Button";
+import { H1, Span } from "@asset/Typography";
 import Carousel from "./Carousel/Carousel";
 import PictureContainer from "./PictureContainer/PictureContainer";
 

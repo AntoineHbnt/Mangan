@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import FlexContainer from "../../atoms/Container/FlexContainer";
-import { H2 } from "../../../../asset/Typography";
+import { H2 } from "@asset/Typography";
+import { ChildrenWrapper, Wrapper } from "./FilterCategory.styles";
 
 function FilterCategory({ label, children }) {
   return (
-    <FlexContainer flexDirection="column" width="100%" gap="12px">
+    <Wrapper>
       <H2>{label}</H2>
-      <FlexContainer flexDirection="column" width="100%">
+      <ChildrenWrapper>
         {children}
-      </FlexContainer>
-    </FlexContainer>
+      </ChildrenWrapper>
+    </Wrapper>
   );
 }
 

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Container from "../../atoms/Container/Container";
-import Picture from "../../atoms/Picture/Picture";
-import LikeHeart from "../../atoms/LikeHeart/LikeHeart";
-import FlexContainer from "../../atoms/Container/FlexContainer";
-import StarsEval from "../../atoms/StarsEval/StarsEval";
+import Picture from "@atoms/Picture/Picture";
+import LikeHeart from "@atoms/LikeHeart/LikeHeart";
+import StarsEval from "@atoms/StarsEval/StarsEval";
+import { HoverContainer, Wrapper } from "./RecipeCardPicture.styles";
 
 function RecipeCardPicture({src}) {
   const [isLiked, setIsLiked] = useState(false);
@@ -16,26 +15,19 @@ function RecipeCardPicture({src}) {
     overflow: "hidden",
   };
 
-  const flexStyle = {
-    position: "absolute",
-    top: "0",
-    right: "0",
-    padding: "$18",
-  }
-
   const handleClick = () => {
     setIsLiked(!isLiked);
   }
     
 
   return (
-    <Container>
+    <Wrapper>
       <Picture src={src} css={pictureStyle} />
-      <FlexContainer height="100%" flexDirection="column" alignItems="center" justifyContent="space-between" css={flexStyle}>
+      <HoverContainer>
         <LikeHeart isLiked={isLiked} onClick={() => handleClick()}/>
         <StarsEval value={5}/>
-      </FlexContainer>
-    </Container>
+      </HoverContainer>
+    </Wrapper>
   );
 }
 
