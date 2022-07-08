@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "@atoms/Button/Button";
-import RecipeCardChefInfo from "@molecules/RecipeCardChefInfo/RecipeCardChefInfo";
-import RecipeCardDescription from "@molecules/RecipeCardDescription/RecipeCardDescription";
-import RecipeCardPicture from "@molecules/RecipeCardPicture/RecipeCardPicture";
+import Button from "components/UI/atoms/Button/Button";
+import RecipeCardChefInfo from "components/UI/molecules/RecipeCardChefInfo/RecipeCardChefInfo";
+import RecipeCardDescription from "components/UI/molecules/RecipeCardDescription/RecipeCardDescription";
+import RecipeCardPicture from "components/UI/molecules/RecipeCardPicture/RecipeCardPicture";
 import { Card, Wrapper } from "./RecipeCard.styles";
 
 function RecipeCard() {

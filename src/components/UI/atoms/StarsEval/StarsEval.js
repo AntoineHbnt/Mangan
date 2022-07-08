@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "@stitches-config";
-import StarIcon from "@asset/icons/Star";
+import { styled } from "stitches.config";
+import StarIcon from "asset/icons/Star";
 
 function StarsEval({ value }) {
   const StyledValue = styled("span", {

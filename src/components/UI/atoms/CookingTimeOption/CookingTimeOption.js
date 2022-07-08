@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "@stitches-config";
-import { Span } from "@typography";
+import { styled } from "stitches.config";
+import { Span } from "asset/Typography";
 
 function CookingTimeOption({ label, active, css }) {
 

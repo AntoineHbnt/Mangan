@@ -1,6 +1,6 @@
 import React from "react";
-import { HomeLogo } from "@asset/logo/Logo";
-import { Copyright } from "@asset/Typography";
+import { HomeLogo } from "asset/logo/Logo";
+import { Copyright } from "asset/Typography";
 import Wrapper from "./Footer.styles";
 
 function Footer() {
