@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Container from "@atoms/Container/Container";
-import FlexContainer from "@atoms/Container/FlexContainer";
-import Header from "@organisms/Header/Header";
-import Button from "@atoms/Button/Button";
+import Container from "components/UI/atoms/Container/Container";
+import FlexContainer from "components/UI/atoms/Container/FlexContainer";
+import Header from "components/UI/organisms/Header/Header";
+import Button from "components/UI/atoms/Button/Button";
 import { ContentContainer, HeaderContainer, Wrapper } from "./GridSidepage.styles";
 
 function GridSidebarPage({ sidebar, content, footer }) {

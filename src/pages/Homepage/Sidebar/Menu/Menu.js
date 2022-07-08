@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Container from "@atoms/Container/Container";
-import FlexContainer from "@atoms/Container/FlexContainer";
-import { HorizontalDashedLine } from "@asset/StyledAsset";
-import LinkItem from "@atoms/LinkItem/LinkItem";
+import Container from "components/UI/atoms/Container/Container";
+import FlexContainer from "components/UI/atoms/Container/FlexContainer";
+import { HorizontalDashedLine } from "asset/StyledAsset";
+import LinkItem from "components/UI/atoms/LinkItem/LinkItem";
 
 function Menu() {
   return (

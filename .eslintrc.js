@@ -16,4 +16,11 @@ module.exports = {
     "linebreak-style": ["error", "windows"],
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
   },
+  settings: {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
 };
