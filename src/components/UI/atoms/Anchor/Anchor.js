@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "@stitches-config";
+import { styled } from "stitches.config";
 
 function Anchor({ href, css, children }) {
   const StyledAnchor = styled("a", {

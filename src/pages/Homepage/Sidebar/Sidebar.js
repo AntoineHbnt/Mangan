@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "@atoms/Container/Container";
-import FlexContainer from "@atoms/Container/FlexContainer";
-import { HomeLogo } from "@asset/logo/Logo";
+import Container from "components/UI/atoms/Container/Container";
+import FlexContainer from "components/UI/atoms/Container/FlexContainer";
+import { HomeLogo } from "asset/logo/Logo";
 import Footer from "../Footer/Footer";
 import Menu from "./Menu/Menu";
 

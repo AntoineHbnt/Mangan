@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import FlexContainer from "@atoms/Container/FlexContainer";
-import { MobileLogo } from "@asset/logo/Logo";
+import FlexContainer from "components/UI/atoms/Container/FlexContainer";
+import { MobileLogo } from "asset/logo/Logo";
 import Menu from "./Tablet/Menu/Menu";
 import SideMenu from "./Mobile/SideMenu/SideMenu";
 import SideMenuButton from "./Mobile/SideMenuButton/SideMenuButton";

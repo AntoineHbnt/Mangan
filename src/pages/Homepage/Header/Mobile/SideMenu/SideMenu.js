@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { keyframes, styled } from "@stitches/react";
-import FlexContainer from "@atoms/Container/FlexContainer";
+import FlexContainer from "components/UI/atoms/Container/FlexContainer";
+import LinkItem from "components/UI/atoms/LinkItem/LinkItem";
 import SocialMedia from "../../../SocialMedia/SocialMedia";
 import SideMenuButton from "../SideMenuButton/SideMenuButton";
-import LinkItem from "@atoms/LinkItem/LinkItem";
 
 function SideMenu({ close }) {
   const showSideMenu = keyframes({

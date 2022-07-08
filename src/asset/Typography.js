@@ -1,4 +1,5 @@
-import { styled } from "@stitches-config";
+import { styled } from "stitches.config";
+
 
 export const H1 = styled("h1", {
   fontSize: "$36",

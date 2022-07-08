@@ -1,6 +1,6 @@
 import React from "react";
-import ContentHeader from "@molecules/ContentHeader/ContentHeader";
-import RecipeCard from "@molecules/RecipeCard/RecipeCard";
+import ContentHeader from "components/UI/molecules/ContentHeader/ContentHeader";
+import RecipeCard from "components/UI/molecules/RecipeCard/RecipeCard";
 import { Grid, Header, Wrapper } from "./RecipesListContent.styles";
 
 function RecipesListContent() {

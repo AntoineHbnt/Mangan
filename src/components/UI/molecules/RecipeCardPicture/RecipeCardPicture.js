@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Picture from "@atoms/Picture/Picture";
-import LikeHeart from "@atoms/LikeHeart/LikeHeart";
-import StarsEval from "@atoms/StarsEval/StarsEval";
+import Picture from "components/UI/atoms/Picture/Picture";
+import LikeHeart from "components/UI/atoms/LikeHeart/LikeHeart";
+import StarsEval from "components/UI/atoms/StarsEval/StarsEval";
 import { HoverContainer, Wrapper } from "./RecipeCardPicture.styles";
 
 function RecipeCardPicture({src}) {

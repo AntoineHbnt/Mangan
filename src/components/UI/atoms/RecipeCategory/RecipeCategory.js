@@ -1,7 +1,7 @@
 import React from "react";
-import { styled } from "@stitches-config";
+import { styled } from "stitches.config";
 import PropTypes from "prop-types";
-import { Filter } from "@asset/Typography";
+import { Filter } from "asset/Typography";
 
 function RecipeCategory({ icon, label }) {
   const Wrapper = styled("div", {

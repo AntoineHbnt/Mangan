@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes, { string } from "prop-types";
 import { nanoid } from "nanoid";
-import SortIcon from "@asset/icons/Sort";
-import { Span } from "@asset/Typography";
+import SortIcon from "asset/icons/Sort";
+import { Span } from "asset/Typography";
 import { Select, SelectContent, Wrapper } from "./SelectSort.styles";
 
 function SelectSort({ options }) {
