@@ -22,11 +22,10 @@ export const Grid = styled("div",{
     height: "fit-content",
 
     "& > div": {
-      width: `30%`,
-      height: "550px",
+      width: "calc((100% - 40px)/3)",
 
       "@tablet": {
-        width: `45%`,
+        width: `calc((100% - 20px)/2)`,
       },
     },
 })

@@ -78,6 +78,7 @@ export const { styled, css } = createStitches({
       16: "1rem",
       14: "0.875rem",
       12: "0.75rem",
+      "content-max": "1170px",
     },
     borderWidths: {},
     borderStyles: {},

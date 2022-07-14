@@ -6,7 +6,6 @@ import Wrapper from "./ContentHeader.styles";
 
 function ContentHeader({ label }) {
   const titleStyle = {
-    display: "inline-block",
     lineHeight: "1.2",
     width: "55%",
 

@@ -6,7 +6,7 @@ function Button({ value, onClick, css }) {
   const StyledInputSubmit = styled("input", {
     position: "relative",
     width: "100%",
-    height: "50px",
+    minHeight: "50px",
     background: "$red",
     color: "$white",
     border: "none",

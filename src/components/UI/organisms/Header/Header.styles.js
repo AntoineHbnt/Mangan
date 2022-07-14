@@ -1,13 +1,14 @@
 import { styled } from "stitches.config";
 
 export const Wrapper = styled("div", {
+  position: "relative",
   display: "flex",
   alignItems: "center",
   width: "100%",
   margin: "auto",
   minHeight: "100px",
   maxWidth: "1170px",
-  zIndex: 30,
+  padding: "0 $32",
 
   "@smallScreen": {
     justifyContent: "space-between",
