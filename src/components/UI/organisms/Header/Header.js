@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Logo } from "asset/logo/Logo";
 import Navbar from "components/UI/molecules/Navbar/Navbar";
 import ThreeLineMenu from "asset/icons/ThreeLineMenuIcon";
@@ -11,7 +12,9 @@ function Header() {
   return (
     <Wrapper>
       <LogoContainer>
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
       </LogoContainer>
       <NavbarContainer open={isMenuOpen}>
         <Navbar />

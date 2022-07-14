@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar/Sidebar";
 
 function Homepage() {
   return (
-    <FlexContainer width="100%" height="100%" css={{ overflow: "hidden" }}>
+    <FlexContainer width="100%" height="100%">
       <Header />
       <Sidebar />
       <PictureGrid />

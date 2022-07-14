@@ -5,6 +5,7 @@ import Wrapper from "./Navbar.styles";
 function Navbar() {
   const linkStyle = {
     cursor: "pointer",
+
     "&:hover > span": {
       fontWeight: 600,
     },
@@ -15,15 +16,15 @@ function Navbar() {
       justifyContent: "center",
     },
 
-    "@mobile":{
+    "@mobile": {
       height: "100%",
       width: "100vw",
       display: "flex",
       justifyContent: "center",
-      "&:hover":{
+      "&:hover": {
         backgroundColor: "rgba(0,0,0,0.05)",
-      }
-    }
+      },
+    },
   };
 
   return (

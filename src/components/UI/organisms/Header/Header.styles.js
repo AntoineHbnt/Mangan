@@ -17,6 +17,7 @@ export const Wrapper = styled("div", {
 
 export const LogoContainer = styled("div", {
   display: "flex",
+  cursor: "pointer",
   flex: 1,
 });
 

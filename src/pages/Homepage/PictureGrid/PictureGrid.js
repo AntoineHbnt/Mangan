@@ -1,4 +1,5 @@
 import { React } from "react";
+import { Link } from "react-router-dom";
 import FlexContainer from "components/UI/atoms/Container/FlexContainer";
 import Button from "components/UI/atoms/Button/Button";
 import { H1, Span } from "asset/Typography";
@@ -52,7 +53,7 @@ function ActiveRecipe() {
   };
 
   return (
-    <FlexContainer height="100%" css={{ flex: 2 }}>
+    <FlexContainer height="100vh" css={{ minHeight: "640px", flex: 2 }}>
       <PictureContainer />
 
       <FlexContainer
@@ -67,7 +68,9 @@ function ActiveRecipe() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
           doloremque suscipit. Dolor earum officiis suscipit!
         </Span>
-        <Button value="Show Recipe" css={{ width: "250px", height: "65px" }} />
+        <Link to="/recipes">
+         <Button value="Show Recipe" css={{ width: "250px", height: "65px" }} />
+        </Link>
       </FlexContainer>
     </FlexContainer>
   );
