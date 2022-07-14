@@ -11,9 +11,14 @@ const showContent = keyframes({
 });
 
 export const Container = styled("div", {
+  display: "none",
   position: "relative",
   width: "100vw",
   zIndex: 30,
+
+  "@smallScreen": {
+    display: "flex",
+  }
 });
 
 export const Content = styled("div", {
