@@ -53,12 +53,12 @@ function ActiveRecipe() {
   };
 
   return (
-    <FlexContainer height="100vh" css={{ minHeight: "640px", flex: 2 }}>
+    <FlexContainer height="100vh" css={{ minHeight: "750px", flex: 2 }}>
       <PictureContainer />
 
       <FlexContainer
         height="100%"
-        width="85%"
+        width="100%"
         flexDirection="column"
         justifyContent="flex-end"
         css={flexStyle}

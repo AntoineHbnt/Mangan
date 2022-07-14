@@ -12,9 +12,9 @@ const showContent = keyframes({
 
 export const Container = styled("div", {
   display: "none",
-  position: "relative",
+  position: "absolute",
   width: "100vw",
-  zIndex: 30,
+  zIndex: "30",
 
   "@smallScreen": {
     display: "flex",
@@ -30,6 +30,7 @@ export const Content = styled("div", {
   left: 0,
   width: "100vw",
   height: "calc(fit-content + 60px)",
+  minHeight: "100vh",
   maxHeight: "calc(100vh - 50px)",
   overflowY: "scroll",
   padding: "$32",
