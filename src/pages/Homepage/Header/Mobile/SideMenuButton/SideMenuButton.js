@@ -11,6 +11,11 @@ function SideMenuButton({ onClick, isOpen }) {
     height: "fit-content",
     background: "none",
     border: "none",
+    cursor: "pointer",
+
+    "& svg": {
+      fill: "#fff",
+    },
 
     "@mobile": {
       display: "block",

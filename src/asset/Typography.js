@@ -44,7 +44,6 @@ export const NavItem = styled("span", {
   fontWeight: "400",
   fontFamily: "$poppins",
   lineHeight: "58px",
-  color: "$black",
 
   variants: {
     active: {

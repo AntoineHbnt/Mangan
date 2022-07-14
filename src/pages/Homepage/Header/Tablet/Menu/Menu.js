@@ -10,7 +10,9 @@ function Menu() {
   };
 
   const navItemStyle = {
-    color: "$white",
+    "& > span":{
+      color: "$white",
+    }
   };
 
   return (

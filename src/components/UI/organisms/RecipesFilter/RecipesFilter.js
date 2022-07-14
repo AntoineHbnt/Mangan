@@ -6,14 +6,13 @@ import MainDishesIcon from "asset/icons/RecipeCategories/MainDishesIcon";
 import SoupsSaladsIcon from "asset/icons/RecipeCategories/SoupsSaladsIcon";
 import CookingTime from "components/UI/molecules/CookingTime/CookingTime";
 import RecipeCategory from "components/UI/atoms/RecipeCategory/RecipeCategory";
-import Sidebar from "components/UI/atoms/Sidebar/Sidebar";
 import FilterCategory from "components/UI/molecules/FilterCategory/FilterCategory";
 import Button from "components/UI/atoms/Button/Button";
 import SelectInput from "components/UI/molecules/SelectInput/SelectInput";
 
 function RecipesFilter() {
   return (
-    <Sidebar>
+    <>
       <FilterCategory label="Categories">
         <RecipeCategory
           label="All Categories"
@@ -37,7 +36,7 @@ function RecipesFilter() {
       </FilterCategory>
 
       <Button value="Refine Search" />
-    </Sidebar>
+    </>
   );
 }
 

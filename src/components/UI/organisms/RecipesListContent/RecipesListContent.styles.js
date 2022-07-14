@@ -15,17 +15,17 @@ export const Header = styled("header", {
 export const Grid = styled("div",{
     display: "flex",
     rowGap: "20px",
+    columnGap: "20px",
     flexWrap: "wrap",
 
     width: "100%",
     height: "fit-content",
 
     "& > div": {
-      width: `33.33%`,
-      height: "550px",
+      width: "calc((100% - 40px)/3)",
 
       "@tablet": {
-        width: `50%`,
+        width: `calc((100% - 20px)/2)`,
       },
     },
 })
