@@ -14,9 +14,7 @@ export const HeaderContainer = styled("div", {
   width: "100%",
   height: "100px",
   boxShadow: "0px 13px 29.12px 2.88px rgba(44, 44, 44, 0.07)",
-  "@smallScreen": {
-    padding: "0 $32",
-  },
+  padding: "0 $32",
 });
 
 export const ContentContainer = styled("div", {

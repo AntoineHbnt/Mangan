@@ -15,7 +15,6 @@ export const Card = styled("div", {
   height: 'fit-content',
   gap: "30px",
   display: "flex",
-  padding: "15px",
     cursor: "pointer",
     transition: "all .1s ease",
     borderRadius: "8px",

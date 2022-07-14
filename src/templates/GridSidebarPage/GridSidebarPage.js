@@ -4,7 +4,11 @@ import Container from "components/UI/atoms/Container/Container";
 import FlexContainer from "components/UI/atoms/Container/FlexContainer";
 import Header from "components/UI/organisms/Header/Header";
 import Button from "components/UI/atoms/Button/Button";
-import { ContentContainer, HeaderContainer, Wrapper } from "./GridSidepage.styles";
+import {
+  ContentContainer,
+  HeaderContainer,
+  Wrapper,
+} from "./GridSidepage.styles";
 
 function GridSidebarPage({ sidebar, content, footer }) {
   const [showFilter, setShowFilter] = React.useState(false);
@@ -23,8 +27,9 @@ function GridSidebarPage({ sidebar, content, footer }) {
     display: "none",
     "@smallScreen": {
       display: "flex",
-      padding: "$32",
-      position: "fixed",
+      height: "100vh",
+      position: "absolute",
+      top: 0,
       left: 0,
     },
   };
@@ -60,6 +65,12 @@ function GridSidebarPage({ sidebar, content, footer }) {
       </HeaderContainer>
 
       <ContentContainer>
+        <Container width="100%" height="100%" css={sidebarStyle}>
+          {sidebar}
+        </Container>
+        <Container width="100%" height="100%" css={{ flex: 3 }}>
+          {content}
+        </Container>
         <Container width="100%" height="100%" css={smallScreenSidebarStyle}>
           <FlexContainer
             width="100%"
@@ -91,12 +102,6 @@ function GridSidebarPage({ sidebar, content, footer }) {
               {sidebar}
             </FlexContainer>
           )}
-        </Container>
-        <Container width="100%" height="100%" css={sidebarStyle}>
-          {sidebar}
-        </Container>
-        <Container width="100%" height="100%" css={{ flex: 3 }}>
-          {content}
         </Container>
       </ContentContainer>
       {footer}

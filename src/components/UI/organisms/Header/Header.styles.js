@@ -4,11 +4,10 @@ export const Wrapper = styled("div", {
   display: "flex",
   alignItems: "center",
   width: "100%",
-  height: "50px",
   margin: "auto",
   minHeight: "100px",
   maxWidth: "1170px",
-  zIndex: 20,
+  zIndex: 30,
 
   "@smallScreen": {
     justifyContent: "space-between",
