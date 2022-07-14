@@ -1,17 +1,27 @@
 import React from "react";
 import { Logo } from "asset/logo/Logo";
 import Navbar from "components/UI/molecules/Navbar/Navbar";
-import { LogoContainer, NavbarContainer, Wrapper } from "./Header.styles";
+import ThreeLineMenu from "asset/icons/ThreeLineMenuIcon";
+import Cross from "asset/icons/Cross";
+import { ButtonMenu, LogoContainer, NavbarContainer, Wrapper } from "./Header.styles";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
     <Wrapper>
       <LogoContainer>
         <Logo />
       </LogoContainer>
-      <NavbarContainer>
+      <NavbarContainer open={isMenuOpen}>
         <Navbar />
       </NavbarContainer>
+      <ButtonMenu onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {isMenuOpen ? 
+          <Cross css={{fill: "$black"}}/>
+          : 
+          <ThreeLineMenu css={{fill: "$black"}} /> }
+      </ButtonMenu>
     </Wrapper>
   );
 }

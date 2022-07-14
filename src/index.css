@@ -198,6 +198,8 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
+  border: 0;
+  background: transparent;
 }
 
 /**
